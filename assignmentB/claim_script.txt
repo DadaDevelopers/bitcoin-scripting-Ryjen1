@@ -1,0 +1,5 @@
+# Claiming Transaction Script
+# Used by Alice to redeem before 21 minutes by revealing the preimage
+
+<sig_by_Alice> s3cr3t 1 <htlc_redeem_script>
+

@@ -1,0 +1,9 @@
+# Refund Transaction Script
+# Used by Bob to refund after timeout (21 minutes)
+
+<sig_by_Bob> 0 <htlc_redeem_script>
+# Refund Transaction Script
+# Used by Bob to refund after timeout (21 minutes)
+
+<sig_by_Bob> 0 <htlc_redeem_script>
+

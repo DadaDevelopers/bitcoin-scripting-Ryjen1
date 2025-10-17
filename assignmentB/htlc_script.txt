@@ -1,0 +1,12 @@
+# HTLC Redeem Script
+# Alice can claim with secret preimage before timeout
+# Bob can refund after timeout (21 minutes)
+
+OP_IF
+    OP_SHA256 4e738ca5563c06cfd0018299933d58db1dd8bf97f6973dc99bf6cdc64b5550bd OP_EQUALVERIFY
+    02a1b2c3d4e5f6a7b8c9d0a1b2c3d4e5f6a7b8c9d0a1b2c3d4e5f6a7b8c9d0a1 OP_CHECKSIG
+OP_ELSE
+    1731540000 OP_CHECKLOCKTIMEVERIFY OP_DROP
+    03b2c3d4e5f6a7b8c9d0a1b2c3d4e5f6a7b8c9d0a1b2c3d4e5f6a7b8c9d0a1b2 OP_CHECKSIG
+OP_ENDIF
+
